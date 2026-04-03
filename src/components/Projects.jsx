@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { projects } from "../projects";
 import { BsChevronBarRight, BsGithub } from "react-icons/bs";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Plus } from "lucide-react";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
   const [data, setData] = useState(projects);
+  const [active, setActive] = useState(null);
 
   useEffect(() => {
     const filterData = () => {
@@ -77,8 +78,27 @@ const Projects = () => {
           data.map((project) => (
             <div
               key={project.id}
-              className="col-span-3 md:col-span-1 flex flex-col gap-3 shadow p-4 lg:h-100 h-full"
+              className="col-span-3 md:col-span-1 flex flex-col gap-3 shadow p-4 lg:h-100 h-full relative group"
             >
+              <div
+                className="px-2 cursor-pointer py-1 rounded-full bg-gray-300 absolute top-35 left-15 group-hover:block hidden"
+                onClick={() =>
+                  setActive(active === project.id ? null : project.id)
+                }
+              >
+                <Plus className="w-4" />
+              </div>
+
+              <div
+                className={`absolute -top-25 left-0 bg-white z-10 w-full h-fit p-4 rounded shadow ${
+                  active === project.id ? "block" : "hidden"
+                }`}
+              >
+                <p className="text-sm text-gray-500">
+                  {project.fullDescription}
+                </p>
+              </div>
+
               <img
                 src={project.image}
                 alt={project.title}
