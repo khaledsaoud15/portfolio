@@ -24,7 +24,7 @@ const Header = () => {
       <div className="flex flex-col gap-3 lg:w-3/4">
         <span className="text-xs font-semibold text">PROJECTS</span>
         <h1 className="text-5xl md:text-7xl lg:text-[6rem] text ">Explore</h1>
-        <h1 className="dm-serif text-6xl md:text-7xl lg:text-[8rem] italic! text">
+        <h1 className="dm-serif text-8xl  lg:text-[8rem] italic! text">
           The projects.
         </h1>
       </div>
