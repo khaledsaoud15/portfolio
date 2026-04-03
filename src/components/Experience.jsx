@@ -35,7 +35,7 @@ const Experience = () => {
             tech.
           </p>
         </div>
-        <div className="flex flex-col gap-2 h-fit absolute  top-110 lg:left-50 left-5 lg:w-90 w-80">
+        <div className="flex flex-col gap-2 h-fit absolute  top-130 lg:left-50 left-5 lg:w-90 w-80">
           <div className="flex items-center gap-3">
             <h1 className="text-xl font-semibold">Web agency</h1>
             <p className="text-sm text-gray-700">- Frontend developer</p>
