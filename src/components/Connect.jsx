@@ -8,7 +8,7 @@ const Connect = () => {
         <h1 className="text-xl font-semibold md:text-2xl lg:text-4xl">
           You have a project in mind?.
         </h1>
-        <h2 className="text-5xl font-bold italic! dm-serif text-yellow-500  md:text-4xl lg:text-7xl leading-0">
+        <h2 className="text-5xl font-bold italic! dm-serif text-yellow-500  md:text-4xl lg:text-7xl ">
           Let's collaborate!
         </h2>
         <button className="text-white bg-black rounded px-12 py-5 cursor-pointer shadow hover:bg-yellow-500 transition-all duration-200 active:bg-black hover:-translate-y-1">
