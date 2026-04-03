@@ -59,6 +59,39 @@ export const projects = [
     },
     image: "./assets/images/creed.png",
   },
+
+  {
+    id: 5,
+    title: "Jewls Ecommerce",
+    description:
+      "A modern e-commerce platform for a jewelry brand, featuring a sleek design and intuitive user experience.",
+    fullDescription:
+      "Jewls Ecommerce is a contemporary online store designed for a jewelry brand, offering a sleek and visually appealing design. The platform provides an intuitive user experience, allowing customers to easily navigate through the product catalog and find their desired items. With features such as product filtering, secure checkout, and responsive design, Jewls Ecommerce ensures a seamless shopping experience for users on all devices. The website is built using modern web technologies to deliver high performance and reliability.",
+    category: "ecommerce",
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    links: {
+      github: "https://github.com/Insaf2712/jewls",
+      live: "https://jewls-plum.vercel.app/",
+    },
+    image: "./assets/images/jewls.png",
+    collab: true,
+  },
+  {
+    id: 6,
+    title: "Blog Platform",
+    description:
+      "A blogging platform that allows users to create and share their own blog posts, with features such as user authentication, commenting, and social sharing.",
+    fullDescription:
+      "The Blog Platform is a comprehensive solution for creating and managing blog content. It provides users with a simple interface to write and publish their articles, while also offering features like user authentication, commenting systems, and social sharing options. The platform is built with a focus on usability and performance, ensuring a great experience for both content creators and readers.",
+    category: "blog",
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    links: {
+      github: "https://github.com/boutabacs/blog-insafmohlem",
+      live: "https://blog-insafmohlem.vercel.app/",
+    },
+    image: "./assets/images/blog.png",
+    collab: true,
+  },
 ];
 
 export const skills = [

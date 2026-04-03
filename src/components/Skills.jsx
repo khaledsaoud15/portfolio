@@ -7,9 +7,8 @@ const Skills = () => {
       <h1 className="text-4xl font-bold dm-serif text-center italic!">
         Skills
       </h1>
-     
 
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap  w-full lg:w-3/4 gap-4 h-fit mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap lg:justify-center  w-full lg:w-3/4 gap-4 h-fit mx-auto">
         {skills.map((skill) => (
           <div
             key={skill.id}

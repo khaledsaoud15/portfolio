@@ -82,11 +82,11 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-64 object-cover rounded"
+                className="w-auto h-64 object-cover rounded"
               />
               <h3 className="text-xl font-semibold">{project.title}</h3>
               <p className="text-sm text-gray-500">{project.description}</p>
-              <div className="flex items-center gap-2  w-full">
+              <div className="flex flex-wrap items-center gap-2  w-full">
                 {project.technologies.map((tech, index) => (
                   <span
                     key={index}
@@ -113,6 +113,9 @@ const Projects = () => {
                   Live
                   <BsChevronBarRight className=" h-4" />
                 </a>
+                <span className="text-sm text-gray-500 ">
+                  {project.collab ? "Collaboration" : "Solo project"}
+                </span>
               </div>
             </div>
           ))
