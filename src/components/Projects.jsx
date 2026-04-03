@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { projects } from "../projects";
+import { BsChevronBarRight, BsGithub } from "react-icons/bs";
+import { ChevronRight } from "lucide-react";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -84,20 +86,32 @@ const Projects = () => {
               />
               <h3 className="text-xl font-semibold">{project.title}</h3>
               <p className="text-sm text-gray-500">{project.description}</p>
+              <div className="flex items-center gap-2  w-full">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
               <div className="flex items-center gap-3">
                 <a
                   href={project.links.github}
                   target="_blank"
-                  className="text-sm text-gray-500 hover:text-yellow-500 transition-all duration-200"
+                  className="text-sm flex items-center gap-2 p-2 bg-black text-white rounded hover:text-yellow-500 transition-all duration-200"
                 >
+                  <BsGithub />
                   Github
                 </a>
                 <a
                   href={project.links.live}
                   target="_blank"
-                  className="text-sm text-gray-500 hover:text-yellow-500 transition-all duration-200"
+                  className="text-sm flex  items-center gap-2  p-2 bg-yellow-500 text-white rounded hover:text-black transition-all duration-200"
                 >
                   Live
+                  <BsChevronBarRight className=" h-4" />
                 </a>
               </div>
             </div>

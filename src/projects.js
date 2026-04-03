@@ -29,6 +29,36 @@ export const projects = [
     },
     image: "./assets/images/plane.png",
   },
+  {
+    id: 3,
+    title: "Design Studio",
+    description:
+      "A design studio website showcasing a portfolio of creative work, including graphic design, branding, and web design projects.",
+    fullDescription:
+      "The Design Studio website is a portfolio showcasing the creative work of a design agency. It features a modern layout that highlights graphic design, branding, and web design projects. The site is built with a focus on aesthetics and user experience, ensuring that visitors can easily navigate through the portfolio and appreciate the quality of the work.",
+    category: "landing",
+    technologies: ["HTML", "Tailwind CSS", "JavaScript"],
+    links: {
+      github: "",
+      live: "https://khaled-design-studio-website.netlify.app/",
+    },
+    image: "./assets/images/designstudio.png",
+  },
+  {
+    id: 4,
+    title: "Creed E-commerce",
+    description:
+      "An e-commerce website for a fashion brand, featuring a product catalog, shopping cart, and secure checkout process.",
+    fullDescription:
+      "Creed E-commerce is an online store designed for a fashion brand, offering a wide range of products through a user-friendly interface. The website features a comprehensive product catalog, allowing customers to browse and search for items with ease. The shopping cart functionality enables users to add products and manage their selections before proceeding to a secure checkout process. Built with modern web technologies, Creed E-commerce ensures a seamless shopping experience while maintaining high standards of security and performance.",
+    category: "ecommerce",
+    technologies: ["React", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+    links: {
+      github: "https://github.com/khaledsaoud15/creed-clone",
+      live: "https://creed-clone.vercel.app/",
+    },
+    image: "./assets/images/creed.png",
+  },
 ];
 
 export const skills = [
