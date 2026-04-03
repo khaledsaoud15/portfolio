@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Skills from "./components/Skills";
+import Connect from "./components/Connect";
+import Footer from "./Footer";
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
       <Projects />
       <Experience />
       <Skills />
+      <Connect />
+      <Footer />
     </div>
   );
 };

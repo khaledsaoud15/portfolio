@@ -13,3 +13,10 @@ body {
   font-family: "DM Serif Display", serif;
   font-style: normal;
 }
+
+.pattern {
+  background-image: url("./assets/images/pattern.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}

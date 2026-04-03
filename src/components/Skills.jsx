@@ -3,10 +3,12 @@ import { skills } from "../projects";
 
 const Skills = () => {
   return (
-    <section className="flex flex-col gap-8 h-fit px-8 md:px-16 py-16 w-full">
+    <section className="flex flex-col gap-8 h-full justify-center px-8 md:px-16 py-18 w-full">
       <h1 className="text-4xl font-bold dm-serif text-center italic!">
         Skills
       </h1>
+     
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:flex lg:flex-wrap  w-full lg:w-3/4 gap-4 h-fit mx-auto">
         {skills.map((skill) => (
           <div
