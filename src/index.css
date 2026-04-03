@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+body {
+  background: #f8f8f8;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.dm-serif {
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
