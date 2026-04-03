@@ -77,7 +77,7 @@ const Projects = () => {
           data.map((project) => (
             <div
               key={project.id}
-              className="col-span-3 md:col-span-1 flex flex-col gap-3 shadow p-4 h-[70vh]"
+              className="col-span-3 md:col-span-1 flex flex-col gap-3 shadow p-4 lg:h-100 h-full"
             >
               <img
                 src={project.image}
